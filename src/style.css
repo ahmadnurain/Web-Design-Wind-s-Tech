@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden;
+}
+
+.image-floating {
+  animation: float 4s infinite; /* Apply the animation */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bg-image {
+  background-image: url("./assets/a.png");
+  background-repeat: no-repeat;
+  background-size: 60rem;
+}
+/* src/index.css */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Sesuaikan dengan warna background yang Anda inginkan */
+  z-index: 9999;
+}
+
+/* src/style.css */
+/* src/style.css */
+nav.nav-menu {
+  top: 56px; /* Atur jarak dari atas header jika diperlukan */
+  transform: translateY(-100%);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+nav.nav-menu.translate-y-0 {
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  nav.nav-menu {
+    transform: none;
+    position: static;
+    top: auto; /* Hapus jarak dari atas jika dalam tampilan desktop */
+  }
+}
+
+.bg-image-about {
+  background-image: url("./assets/blending 1723488980403 (1).png");
+  background-repeat: no-repeat;
+  background-size: 80rem;
+}
+.image-size {
+  width: 210rem;
+}
+.bg-image-ctagories {
+  background-image: url("./assets/blending 1723488980403.png");
+  background-repeat: no-repeat;
+  background-size: 80rem;
+}
